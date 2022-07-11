@@ -1,0 +1,276 @@
+/* Work Section */
+.work-section {
+  position: relative !important;
+  padding-bottom: 100px;
+}
+
+.work-description {
+  width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.work-row {
+  margin-top: 50px;
+}
+
+.work-tab {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.work-img-1 {
+  width: 130px;
+  display: block;
+  margin: auto;
+}
+
+.work-img-2,
+.work-img-3,
+.work-img-4 {
+  width: 166px;
+  height: 123px;
+  display: block;
+  margin: auto;
+}
+
+.work-link {
+  display: block;
+  margin: 30px auto 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 150px;
+}
+
+.floater1 {
+  position: absolute !important;
+  bottom: 400px;
+  left: -5vw;
+}
+
+.floater2 {
+  position: absolute !important;
+  bottom: 410px;
+  left: 0;
+}
+
+.floater3 {
+  position: absolute !important;
+  bottom: 250px;
+  right: -3vw;
+}
+
+.floater4 {
+  position: absolute !important;
+  bottom: 250px;
+  right: -8vw;
+}
+
+.floater5 {
+  position: absolute !important;
+  bottom: 200px;
+  right: -5vw;
+}
+
+.floater6 {
+  position: absolute !important;
+  bottom: 0;
+  left: -8vw;
+}
+
+.floater7 {
+  position: absolute !important;
+  bottom: 100px;
+  left: -4vw;
+}
+
+@media (min-width: 1920px) {
+  .work-section {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 1919px) {
+  .work-section {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1679px) {
+  .work-section {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+/* iPad Pro 12 Landscape View */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1024px) and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) {
+  .floater1 {
+    left: 0;
+  }
+  .floater2 {
+    left: 5vw;
+  }
+  .floater3 {
+    right: -1vw;
+  }
+  .floater4 {
+    right: -6vw;
+  }
+  .floater5 {
+    right: -3vw;
+  }
+  .floater6 {
+    left: -5vw;
+  }
+  .floater7 {
+    left: -1vw;
+  }
+}
+
+@media (max-width: 1199px) {
+  .work-description {
+    width: 500px;
+  }
+  .work-tab {
+    width: 200px;
+  }
+  .floater1 {
+    bottom: 375px;
+    left: 5vw;
+  }
+  .floater2 {
+    bottom: 350px;
+    left: 13vw;
+  }
+  .floater3 {
+    bottom: 350px;
+    right: 13vw;
+  }
+  .floater4 {
+    bottom: 325px;
+    right: 5vw;
+  }
+  .floater5 {
+    bottom: 425px;
+    right: 0;
+  }
+  .floater6 {
+    bottom: -70px;
+    left: 3vw;
+  }
+  .floater7 {
+    bottom: 0;
+    left: -2vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .work-row {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .work-row div:nth-child(3),
+  .work-row div:nth-child(4) {
+    margin-top: 50px;
+  }
+  .work-tab {
+    width: 220px;
+  }
+  .floater1 {
+    bottom: 700px;
+    left: 0;
+  }
+  .floater2 {
+    bottom: 350px;
+    left: 0vw;
+  }
+  .floater3 {
+    bottom: 200px;
+    right: 2vw;
+  }
+  .floater4 {
+    bottom: 625px;
+    right: -3vw;
+  }
+  .floater5 {
+    bottom: 600px;
+    right: 2vw;
+  }
+  .floater6 {
+    bottom: 0;
+    left: 0;
+  }
+  .floater7 {
+    bottom: 100px;
+    left: 5vw;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .floater1 {
+    left: -3vw;
+  }
+  .floater2 {
+    left: 4vw;
+  }
+  .floater3 {
+    right: 3vw;
+  }
+  .floater4 {
+    right: -5vw;
+  }
+  .floater5 {
+    right: 1vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .work-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .work-row div:nth-child(2) {
+    margin-top: 50px;
+  }
+  .work-description {
+    width: 100%;
+  }
+  .floater1 {
+    display: none;
+  }
+  .floater2 {
+    bottom: 1225px;
+    left: auto;
+    right: 8vw;
+  }
+  .floater3 {
+    bottom: 700px;
+    right: 5vw;
+  }
+  .floater4 {
+    bottom: 1000px;
+    right: auto;
+    left: 7vw;
+  }
+  .floater5 {
+    bottom: 450px;
+    right: auto;
+    left: 10vw;
+  }
+  .floater6 {
+    bottom: 20px;
+    left: 5vw;
+  }
+
+  .floater7 {
+    bottom: 500px;
+    left: auto;
+    right: 0;
+  }
+}

@@ -1,0 +1,36 @@
+/* Story Section */
+.story-section {
+  position: relative !important;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* iPad Pro 12 Landscape View */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1024px) and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) {
+  .subtitle {
+    font-size: 1rem;
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .subtitle {
+    font-size: 1rem;
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .subtitle {
+    font-size: 1rem;
+    width: 300px;
+  }
+}
+/* End Story Section */

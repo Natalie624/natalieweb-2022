@@ -1,0 +1,22 @@
+.stack-div {
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.stack-img {
+  width: 100px;
+  height: 100px;
+}
+
+.stripe-img {
+  width: 100px;
+  height: 92px;
+  margin-top: 4px;
+}
+
+.stack-name {
+  color: #222222;
+  margin-top: 20px;
+}

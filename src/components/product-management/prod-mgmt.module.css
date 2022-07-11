@@ -1,0 +1,231 @@
+.intro-section {
+  position: relative !important;
+}
+
+.mmi-section {
+  position: relative !important;
+  padding-top: 50px;
+}
+
+.mmi-img {
+  width: 50%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.skills-exp-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.skills-col1-div {
+  padding-right: 15px;
+}
+
+.skills-col2-div {
+  padding-left: 15px;
+}
+
+.floater1 {
+  position: absolute !important;
+  bottom: 230px;
+  left: 10vw;
+}
+
+.floater2 {
+  position: absolute !important;
+  bottom: 300px;
+  left: 16vw;
+}
+
+.floater3 {
+  position: absolute !important;
+  bottom: 80px;
+  left: 16vw;
+}
+
+.floater4 {
+  position: absolute !important;
+  bottom: 50px;
+  left: 8vw;
+}
+
+.floater5 {
+  position: absolute !important;
+  bottom: 230px;
+  right: 15vw;
+}
+
+.floater6 {
+  position: absolute !important;
+  bottom: 190px;
+  right: 8vw;
+}
+
+.floater7 {
+  position: absolute !important;
+  bottom: 40px;
+  right: 14vw;
+}
+
+@media (min-width: 1920px) {
+  .floater1 {
+    bottom: 370px;
+  }
+  .floater2 {
+    bottom: 430px;
+  }
+  .floater3 {
+    bottom: 150px;
+  }
+  .floater5 {
+    bottom: 420px;
+  }
+  .floater6 {
+    bottom: 330px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .floater1 {
+    bottom: 300px;
+  }
+  .floater2 {
+    bottom: 380px;
+  }
+  .floater3 {
+    bottom: 100px;
+  }
+  .floater5 {
+    bottom: 320px;
+  }
+  .floater6 {
+    bottom: 250px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .floater1 {
+    bottom: 260px;
+  }
+  .floater2 {
+    bottom: 320px;
+  }
+  .floater3 {
+    bottom: 90px;
+  }
+  .floater5 {
+    bottom: 270px;
+  }
+  .floater6 {
+    bottom: 210px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .floater1 {
+    bottom: 210px;
+  }
+  .floater2 {
+    bottom: 290px;
+    left: 18vw;
+  }
+  .floater3 {
+    bottom: 60px;
+    left: 17vw;
+  }
+  .floater5 {
+    bottom: 220px;
+    right: 17vw;
+  }
+  .floater7 {
+    right: 16vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .mmi-img {
+    width: 80%;
+  }
+  .skills-col1-div {
+    padding-right: 0;
+  }
+
+  .skills-col2-div {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  .floater1 {
+    display: none;
+  }
+  .floater2 {
+    bottom: 325px;
+    left: 0;
+  }
+  .floater3 {
+    bottom: 50px;
+    left: -1vw;
+  }
+  .floater4 {
+    bottom: 150px;
+    left: 4vw;
+  }
+  .floater5 {
+    bottom: 200px;
+    right: -3vw;
+  }
+  .floater6 {
+    display: none;
+  }
+  .floater7 {
+    bottom: 8vh;
+    right: 5vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .floater2 {
+    bottom: 280px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mmi-section {
+    padding-top: 100px;
+  }
+
+  .mmi-img {
+    width: 89%;
+  }
+  .skills-exp-section {
+    padding-top: 100px;
+  }
+  .floater1 {
+    display: block;
+    bottom: 220px;
+    left: 2vw;
+  }
+  .floater2 {
+    bottom: 29vh;
+    left: 25vw;
+  }
+  .floater3 {
+    display: none;
+  }
+  .floater4 {
+    bottom: -50px;
+    left: 20vw;
+  }
+  .floater5 {
+    display: none;
+  }
+  .floater6 {
+    display: block;
+    bottom: 240px;
+    right: 20vw;
+  }
+  .floater7 {
+    bottom: 50px;
+    right: 0;
+  }
+}

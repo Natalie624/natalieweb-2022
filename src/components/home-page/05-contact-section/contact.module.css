@@ -1,0 +1,144 @@
+.float-box {
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.contact-col1 {
+  position: relative !important;
+}
+
+.contact-img {
+  width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.floater1 {
+  position: absolute !important;
+  bottom: 150px;
+  left: 3vw;
+}
+
+.floater2 {
+  position: absolute !important;
+  bottom: 190px;
+  left: 13vw;
+}
+
+.floater3 {
+  position: absolute !important;
+  bottom: 20px;
+  right: 15vw;
+}
+
+.floater4 {
+  position: absolute !important;
+  bottom: 50px;
+  left: 3vw;
+}
+
+.contact-description {
+  color: #222222;
+}
+
+@media (min-width: 1920px) {
+  .float-box {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .floater1 {
+    left: 5vw;
+  }
+  .floater2 {
+    left: 12vw;
+  }
+  .floater3 {
+    right: 13vw;
+  }
+  .floater4 {
+    left: 5vw;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .float-box {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-img {
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+  .floater1 {
+    bottom: 200px;
+    left: 17vw;
+  }
+  .floater2 {
+    bottom: 250px;
+    left: 35vw;
+  }
+  .floater3 {
+    bottom: 80px;
+    right: 25vw;
+  }
+  .floater4 {
+    bottom: 50px;
+    left: 20vw;
+  }
+  .contact-title,
+  .contact-description {
+    text-align: center;
+  }
+  .contact-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* iPad Pro 11 Portrait View */
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (min-device-height: 1194px) and (max-device-height: 1194px) and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) {
+  .contact-img {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .floater1 {
+    bottom: 220px;
+    left: 10vw;
+  }
+  .floater2 {
+    bottom: 260px;
+    left: 30vw;
+  }
+  .floater4 {
+    left: 13vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-img {
+    margin-right: auto;
+    margin-left: 25px;
+    width: 250px;
+  }
+  .floater1 {
+    bottom: 220px;
+    left: 25vw;
+  }
+  .floater2 {
+    display: none;
+  }
+  .floater3 {
+    bottom: 70px;
+    right: 32%;
+  }
+  .floater4 {
+    bottom: 50px;
+    left: 4vw;
+  }
+}

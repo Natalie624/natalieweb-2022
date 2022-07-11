@@ -1,0 +1,304 @@
+.intro-section {
+  position: relative !important;
+}
+
+.fsd-img1-section {
+  position: relative !important;
+  padding-top: 50px;
+}
+.fsd-img1,
+.fsd-img4 {
+  width: 50%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.tech-stack-section {
+  position: relative !important;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.feature-img-col1-div {
+  margin-right: 15px;
+}
+
+.feature-img-col2-div {
+  margin-left: 15px;
+}
+
+.fsd-img2,
+.fsd-img3 {
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.fsd-img4-div {
+  position: relative !important;
+  padding-top: 50px;
+}
+
+.webstack-lessons-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.webstack-explination-div,
+.lessons-learned-div {
+  margin-top: 50px;
+}
+
+.floater1 {
+  position: absolute !important;
+  bottom: 250px;
+  left: 12vw;
+}
+
+.floater2 {
+  position: absolute !important;
+  bottom: 250px;
+  left: 16vw;
+}
+
+.floater3 {
+  position: absolute !important;
+  bottom: 175px;
+  left: 8vw;
+}
+
+.floater4 {
+  position: absolute !important;
+  bottom: 30px;
+  left: 16vw;
+}
+
+.floater5 {
+  position: absolute !important;
+  bottom: 50px;
+  right: 8vw;
+}
+
+.floater6 {
+  position: absolute !important;
+  bottom: 100px;
+  right: 15vw;
+}
+
+.floater7 {
+  position: absolute !important;
+  bottom: 230px;
+  right: 15vw;
+}
+
+@media (min-width: 1920px) {
+  .floater1 {
+    bottom: 400px;
+    left: 14vw;
+  }
+  .floater2 {
+    bottom: 380px;
+    left: 18vw;
+  }
+  .floater3 {
+    left: 10vw;
+  }
+  .floater4 {
+    bottom: 70px;
+    left: 18vw;
+  }
+  .floater5 {
+    bottom: 100px;
+    right: 10vw;
+  }
+  .floater6 {
+    bottom: 120px;
+    right: 16vw;
+  }
+  .floater7 {
+    bottom: 420px;
+    right: 18vw;
+  }
+}
+
+@media (min-width: 1660px) and (max-width: 1919px) {
+  .floater1 {
+    bottom: 310px;
+    left: 13vw;
+  }
+  .floater2 {
+    bottom: 290px;
+    left: 17vw;
+  }
+  .floater3 {
+    bottom: 175px;
+    left: 9vw;
+  }
+  .floater4 {
+    bottom: 50px;
+    left: 18vw;
+  }
+  .floater5 {
+    bottom: 100px;
+  }
+  .floater6 {
+    bottom: 120px;
+    right: 15vw;
+  }
+  .floater7 {
+    bottom: 330px;
+    right: 16vw;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .floater1 {
+    bottom: 270px;
+  }
+  .floater5 {
+    bottom: 50px;
+  }
+  .floater7 {
+    bottom: 250px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .floater1 {
+    left: 10vw;
+  }
+  .floater2 {
+    left: 19vw;
+  }
+  .floater3 {
+    display: none;
+  }
+  .floater4 {
+    bottom: 40px;
+    left: 15vw;
+  }
+  .floater5 {
+    bottom: 50px;
+  }
+  .floater6 {
+    right: 16vw;
+  }
+
+  .floater7 {
+    bottom: 270px;
+    right: 13vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .fsd-img1,
+  .fsd-img2,
+  .fsd-img3,
+  .fsd-img4 {
+    width: 80%;
+  }
+  .stack-col1,
+  .stack-col2,
+  .stack-col3,
+  .stack-col4,
+  .stack-col5,
+  .stack-col6,
+  .stack-col7 {
+    width: 20%;
+    flex: initial;
+  }
+  .stack-col1,
+  .stack-col2,
+  .stack-col3,
+  .stack-col4,
+  .stack-col5 {
+    margin-bottom: 30px;
+  }
+  .feature-img-col1-div {
+    margin-right: 0;
+  }
+
+  .feature-img-col2-div {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .floater1 {
+    bottom: 290px;
+    left: 0;
+  }
+  .floater2 {
+    bottom: 150px;
+    left: -4vw;
+  }
+  .floater3 {
+    bottom: 80px;
+    left: 3vw;
+  }
+  .floater4 {
+    display: none;
+  }
+  .floater5 {
+    display: none;
+  }
+  .floater6 {
+    right: 3vw;
+  }
+  .floater7 {
+    right: -3vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .fsd-img1-section,
+  .tech-stack-section,
+  .fsd-img4-div,
+  .webstack-lessons-section {
+    padding-top: 100px;
+  }
+
+  .fsd-img1,
+  .fsd-img2,
+  .fsd-img3,
+  .fsd-img4 {
+    width: 90%;
+  }
+  .tech-stack-section h4 {
+    text-align: center;
+  }
+  .stack-col1,
+  .stack-col2,
+  .stack-col3,
+  .stack-col4,
+  .stack-col5,
+  .stack-col6,
+  .stack-col7 {
+    width: 50%;
+    flex: initial;
+  }
+  .stack-col6 {
+    margin-bottom: 30px;
+  }
+  .floater1 {
+    display: none;
+  }
+  .floater2 {
+    bottom: 230px;
+    left: 5vw;
+  }
+  .floater3 {
+    bottom: 0;
+    left: -1vh;
+  }
+  .floater4 {
+    display: block;
+    bottom: 230px;
+    left: 65vw;
+  }
+  .floater6 {
+    bottom: 150px;
+    right: -1vw;
+  }
+  .floater7 {
+    bottom: -70px;
+    right: 30vw;
+  }
+}

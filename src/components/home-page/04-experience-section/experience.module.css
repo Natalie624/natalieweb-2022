@@ -1,0 +1,34 @@
+/* Experience Section */
+.exp-description {
+  width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.exp-img1,
+.exp-img2,
+.exp-img3,
+.exp-img4,
+.exp-img5 {
+  width: 150px;
+  display: block;
+  margin: 50px auto 0;
+}
+
+@media (max-width: 1199px) {
+  .exp-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .exp-img1,
+  .exp-img2,
+  .exp-img3,
+  .exp-img4,
+  .exp-img5 {
+    width: 250px;
+    display: block;
+    margin: 50px auto 0;
+  }
+}
