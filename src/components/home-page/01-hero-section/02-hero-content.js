@@ -1,33 +1,46 @@
 import * as React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-
+import { StaticQuery, graphql } from "gatsby";
 import * as HeroStyle from './hero.module.css';
 
 const HersoContent = () => (
-  <div className={`${HeroStyle.heroCol1Div}`}>
+  <StaticQuery query={graphql`
+    query HomeHeaderAssembly{
+      allContentfulHomeHeaderAssembly{
+        nodes{
+          headline
+          headerTag{
+            tag
+          }
+          headerDescription{
+            headerDescription
+          }
+        }
+      }
+    }
+  `}
+  render = {data => (
+    <div className={`${HeroStyle.heroCol1Div}`}>
     <AnimationOnScroll
       animateIn='animate__fadeIn'
       animateOut='animate__fadeOut'
       offset={100}
     >
-      <h1 className={HeroStyle.heroTitle}>Hi, I'm Natalie</h1>
+      <h1 className={HeroStyle.heroTitle}>{data.allContentfulHomeHeaderAssembly.nodes[0].headline}</h1>
       <p className={HeroStyle.heroSubtitle}>
-        I ARCHITECT MODERN DIGITAL EXPERIENCE SYSTEMS
+        {data.allContentfulHomeHeaderAssembly.nodes[0].headerTag.tag}
       </p>
       <p className={HeroStyle.heroDescription}>
-        Ever since I was a young girl, I wanted to help build the cool,
-        futuristic tech I saw in movies and on TV. Fast-forward years later - My
-        background includes leading rock-star teams to produce amazing software
-        products for Fortune 100 giants and bootstrapped start-ups alike. I
-        focus on building mobile-first enterprise web systems and omnichannel
-        digital experiences for growing companies. I’d love to see what I can
-        help you with!
+        {data.allContentfulHomeHeaderAssembly.nodes[0].headerDescription.headerDescription}
       </p>
-      <a className={`purple-btn float-shadow ${HeroStyle.heroBtn}`} href='/'>
+      <a className={`purple-btn float-shadow ${HeroStyle.heroBtn}`} 
+      href='mailto:natalie.cervantes@gmail.com'>
         Let's Chat
       </a>
     </AnimationOnScroll>
   </div>
+  )}   
+  />
 );
 
 export default HersoContent;
