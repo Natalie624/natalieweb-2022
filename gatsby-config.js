@@ -32,14 +32,14 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //     environment: 'development-2021-02-18',
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+         spaceId: process.env.CONTENTFUL_SPACE_ID,
+         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+         environment: 'release-2021-03-29',
+       },
+     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
