@@ -1,12 +1,27 @@
 import * as React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { StaticQuery, graphql } from "gatsby";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import FadedLogoImg from '../layout/logo-faded';
 
 import * as FSDStyle from '../first-string-digital/fsd.module.css';
 
 const Intro = () => (
-  <div className={`section ${FSDStyle.introSection}`}>
+  <StaticQuery query={graphql`
+      query LasUvasIntro{
+        contentfulLasUvasPageAssembly{
+          luHeading{
+            headline
+            description{
+              raw
+            }
+          }
+        }
+      }
+    `}
+    render = {data => (
+    <div className={`section ${FSDStyle.introSection}`}>
     <Parallax speed={-5}>
       <FadedLogoImg />
     </Parallax>
@@ -17,19 +32,16 @@ const Intro = () => (
         offset={100}
       >
         <h3 className={`section-title text-align-center mb-2rem`}>
-          Las Uvas Wine Tasting
+          {data.contentfulLasUvasPageAssembly.luHeading.headline}
         </h3>
         <p>
-          Las Uvas Wine Tasting was a conceptual project built as a web app for
-          users to schedule in-home wine tasting experiences. This web app was
-          built from scratch using React, Gatsby, Calendly, headless WordPress,
-          and Netlify. With this project, I obtained my first foray into GraphQL
-          and working with headless CMS APIs along with using the Gatsby
-          framework.
+          {renderRichText(data.contentfulLasUvasPageAssembly.luHeading.description)}
         </p>
       </AnimationOnScroll>
     </Parallax>
   </div>
+  )}
+  />
 );
 
 export default Intro;

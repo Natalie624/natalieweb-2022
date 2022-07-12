@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { StaticQuery, graphql } from "gatsby";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { Parallax } from 'react-scroll-parallax';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import FadedLogoImg from '../layout/logo-faded';
