@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { StaticQuery, graphql } from "gatsby";
+import { Link, StaticQuery, graphql } from 'gatsby';
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Row, Col } from 'react-bootstrap';
