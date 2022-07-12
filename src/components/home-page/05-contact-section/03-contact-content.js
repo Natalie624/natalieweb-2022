@@ -21,9 +21,9 @@ const ContactContent = () => (
       <h3 className={`section-title mb-2rem ${ContactStyle.contactTitle}`}>
         {data.contentfulMainScreenAssembly.letsMeet.headline}
       </h3>
-      <p className={ContactStyle.contactDescription}>
+      <div className={ContactStyle.contactDescription}>
         {renderRichText(data.contentfulMainScreenAssembly.letsMeet.description)}
-      </p>
+      </div>
       <a
         className={`purple-btn float-shadow ${ContactStyle.contactBtn}`}
         href='mailto:natalie.cervantes@gmail.com'

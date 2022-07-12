@@ -25,9 +25,9 @@ const WorkContent = () => (
       offset={100}
     >
       <h3 className={`section-title text-align-center mb-2rem`}>{data.contentfulMainScreenAssembly.myWork.headline}</h3>
-      <p className={`text-align-center ${WorkStyle.workDescription}`}>
+      <div className={`text-align-center ${WorkStyle.workDescription}`}>
         {renderRichText(data.contentfulMainScreenAssembly.myWork.description)}
-      </p>
+      </div>
     </AnimationOnScroll>
   </div>
 )}

@@ -45,9 +45,9 @@ const LasUvasDescriptionSection = () => (
       offset={100}
     >
       <h4 className={`section-subtitle mb-1rem`}>{data.contentfulLasUvasPageAssembly.luProjectPurpose.subheadline}</h4>
-      <p className={`mb-0rem`}>
+      <div className={`mb-0rem`}>
         {renderRichText(data.contentfulLasUvasPageAssembly.luProjectPurpose.description)}
-      </p>
+      </div>
     </AnimationOnScroll>
     <AnimationOnScroll
       animateIn='animate__fadeIn'
@@ -56,9 +56,9 @@ const LasUvasDescriptionSection = () => (
     >
       <div className={FSDStyle.webstackExplinationDiv}>
         <h4 className={`section-subtitle mb-1rem`}>{data.contentfulLasUvasPageAssembly.luStackExplanation.subheadline}</h4>
-        <p className={`mb-0rem`}>
+        <div className={`mb-0rem`}>
           {renderRichText(data.contentfulLasUvasPageAssembly.luStackExplanation.description)}
-        </p>
+        </div>
       </div>
     </AnimationOnScroll>
     <AnimationOnScroll
@@ -68,9 +68,9 @@ const LasUvasDescriptionSection = () => (
     >
       <div className={FSDStyle.lessonsLearnedDiv}>
         <h4 className={`section-subtitle mb-1rem`}>{data.contentfulLasUvasPageAssembly.luLessons.subheadline}</h4>
-        <p className={`mb-0rem`}>
+        <div className={`mb-0rem`}>
           {renderRichText(data.contentfulLasUvasPageAssembly.luLessons.description)}
-        </p>
+        </div>
       </div>
     </AnimationOnScroll>
     <div>

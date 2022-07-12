@@ -27,12 +27,12 @@ const HersoContent = () => (
       offset={100}
     >
       <h1 className={HeroStyle.heroTitle}>{data.allContentfulHomeHeaderAssembly.nodes[0].headline}</h1>
-      <p className={HeroStyle.heroSubtitle}>
+      <div className={HeroStyle.heroSubtitle}>
         {data.allContentfulHomeHeaderAssembly.nodes[0].headerTag.tag}
-      </p>
-      <p className={HeroStyle.heroDescription}>
+      </div>
+      <div className={HeroStyle.heroDescription}>
         {data.allContentfulHomeHeaderAssembly.nodes[0].headerDescription.headerDescription}
-      </p>
+      </div>
       <a className={`purple-btn float-shadow ${HeroStyle.heroBtn}`} 
       href='mailto:natalie.cervantes@gmail.com'>
         Let's Chat

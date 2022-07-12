@@ -25,9 +25,9 @@ const ExperienceContent = () => (
       offset={100}
     >
       <h3 className={`section-title text-align-center mb-2rem`}>{data.contentfulMainScreenAssembly.myExperience.headline}</h3>
-      <p className={`text-align-center ${ExpStyle.expDescription}`}>
+      <div className={`text-align-center ${ExpStyle.expDescription}`}>
         {renderRichText(data.contentfulMainScreenAssembly.myExperience.description)}
-      </p>
+      </div>
     </AnimationOnScroll>
   </div>
   )}

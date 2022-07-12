@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
+//import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { Parallax } from 'react-scroll-parallax';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Row, Col } from 'react-bootstrap';
@@ -8,7 +9,20 @@ import BackSVG from '../../svg/back.svg';
 import * as ProdMgmtStyle from './prod-mgmt.module.css';
 
 const SkillsAndExperience = () => (
-  <div
+  <StaticQuery query={graphql`
+      query productManagementSkills{
+        contentfulDpmPageAssembly{
+          dpmBody{
+            subheadline
+            description{
+              raw
+            }
+          }
+        }
+      }
+    `}
+  render = {data => (
+    <div
     className={`section section-bkgd-color ${ProdMgmtStyle.skillsExpSection}`}
   >
     <Parallax speed={-2.5}>
@@ -17,7 +31,7 @@ const SkillsAndExperience = () => (
         animateOut='animate__fadeOut'
         offset={100}
       >
-        <h4 className={`section-subtitle  mb-1rem`}>Skills &amp; Experience</h4>
+        <h4 className={`section-subtitle  mb-1rem`}>{data.contentfulDpmPageAssembly.dpmBody.subheadline}</h4>
       </AnimationOnScroll>
       <Row>
         <Col lg={6}>
@@ -81,6 +95,8 @@ const SkillsAndExperience = () => (
       </Link>
     </div>
   </div>
+  )}
+  />
 );
 
 export default SkillsAndExperience;

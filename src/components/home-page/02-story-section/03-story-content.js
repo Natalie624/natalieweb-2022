@@ -43,9 +43,9 @@ const StoryContent = () => (
       animateOut='animate__fadeOut'
       offset={100}
     >
-      <p>
+      <div>
       {renderRichText(data.allContentfulMainScreenAssembly.nodes[0].myStory.description)}
-      </p>
+      </div>
     </AnimationOnScroll>
   </div>
   )}

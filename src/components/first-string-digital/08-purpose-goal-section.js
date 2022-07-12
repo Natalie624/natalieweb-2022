@@ -32,9 +32,9 @@ const PurposeGoalSection = () => (
         <h4 className={`section-subtitle mb-1rem`}>
           {data.contentfulFsdPageAssembly.fsdProjectPurpose.subheadline}
         </h4>
-        <p className={`mb-0rem`}>
+        <div className={`mb-0rem`}>
           {renderRichText(data.contentfulFsdPageAssembly.fsdProjectPurpose.description)}
-        </p>
+        </div>
       </AnimationOnScroll>
     </Parallax>
     <div className={FSDStyle.fsdImg4Div}>

@@ -41,9 +41,9 @@ const WebStackLessonsSection = () => (
       >
         <div>
           <h4 className={`section-subtitle mb-1rem`}>{data.contentfulFsdPageAssembly.fsdStackExplanation.subheadline}</h4>
-          <p className={`mb-0rem`}>
+          <div className={`mb-0rem`}>
             {renderRichText(data.contentfulFsdPageAssembly.fsdStackExplanation.description)}
-          </p>
+          </div>
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
@@ -53,9 +53,9 @@ const WebStackLessonsSection = () => (
       >
         <div className={FSDStyle.lessonsLearnedDiv}>
           <h4 className={`section-subtitle mb-1rem`}>{data.contentfulFsdPageAssembly.fsdLessons.subheadline}</h4>
-          <p className={`mb-0rem`}>
+          <div className={`mb-0rem`}>
             {renderRichText(data.contentfulFsdPageAssembly.fsdLessons.description)}
-          </p>
+          </div>
         </div>
       </AnimationOnScroll>
     </Parallax>

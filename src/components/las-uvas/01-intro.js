@@ -34,9 +34,9 @@ const Intro = () => (
         <h3 className={`section-title text-align-center mb-2rem`}>
           {data.contentfulLasUvasPageAssembly.luHeading.headline}
         </h3>
-        <p>
+        <div>
           {renderRichText(data.contentfulLasUvasPageAssembly.luHeading.description)}
-        </p>
+        </div>
       </AnimationOnScroll>
     </Parallax>
   </div>

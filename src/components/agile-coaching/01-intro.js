@@ -34,9 +34,9 @@ const Intro = () => (
         <h3 className={`section-title text-align-center mb-2rem`}>
           {data.contentfulAgilePageAssembly.agileHeading.headline}
         </h3>
-        <p>
+        <div>
           {renderRichText(data.contentfulAgilePageAssembly.agileHeading.description)}
-        </p>
+        </div>
       </AnimationOnScroll>
     </Parallax>
   </div>
