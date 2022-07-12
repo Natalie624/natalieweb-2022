@@ -13,7 +13,7 @@ const Footer = () => (
       <div className={`float-shadow logo-div`}>
         <Logo />
       </div>
-      <div className='footer-name'>Natalie Cervantes</div>
+      <div className='footer-name'>Natalie Cervantes 2022</div>
     </Col>
     <Col lg={6} className='footer-col2'>
       <Row className='footer-page-links-row'>
