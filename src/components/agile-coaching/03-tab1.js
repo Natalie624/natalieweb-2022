@@ -12,6 +12,7 @@ const TabOne = () => (
       <FloaterDivs />
     </Col>
     <Col xl={7} sm={9} className={`${CoachingStyle.tabCol2}`}>
+      {/* TO DO: need to adjust content model to accomodate the tabs as designed here: */}
       <div className={`vert-center ${CoachingStyle.tabDescription}`}>
         Retrospectives that actually encourage positive change. I encourage
         teams to ask "why" something happened using the 5 "whys" method to get
